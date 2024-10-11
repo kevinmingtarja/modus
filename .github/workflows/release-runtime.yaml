@@ -14,7 +14,7 @@ jobs:
     steps:
     # TODO: check if version is valid semver
     - name: "Validate version"
-      if: ${{ !startsWith(github.event.inputs.tag, 'runtime/v')
+      if: ${{ !startsWith(github.event.inputs.tag, 'runtime/v') }}
       run: 'echo "Modus Runtime version must start with `runtime/v` && exit 1'
     - uses: actions/checkout@v4
       with:
