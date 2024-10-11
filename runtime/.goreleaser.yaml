@@ -26,8 +26,8 @@ builds:
     mod_timestamp: "{{ .CommitTimestamp }}"
 archives:
   - files:
-      - "README.md"
-      - "LICENSE"
+      - "../README.md"
+      - "../LICENSE"
     format: tar.gz
     # use zip for windows archives
     format_overrides:
