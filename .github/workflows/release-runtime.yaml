@@ -10,7 +10,7 @@ permissions:
   contents: "write"
 jobs:
   release:
-    runs-on: warp-ubuntu-latest-x64-4x
+    runs-on: ubuntu-latest
     steps:
     # TODO: check if version is valid semver
     - name: "Validate version"
