@@ -12,7 +12,7 @@ before:
     - go generate ./...
     - cd runtime && go mod tidy
 builds:
-  - main: ./runtime
+  - main: .
     binary: modus_runtime
     env:
       - CGO_ENABLED=0
