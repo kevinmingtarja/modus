@@ -10,7 +10,7 @@ git:
 before:
   hooks:
     - go generate ./...
-    - go mod tidy
+    - cd runtime && go mod tidy
 builds:
   - main: ./runtime
     binary: modus_runtime
