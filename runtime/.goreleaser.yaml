@@ -9,7 +9,7 @@ git:
   prerelease_suffix: "-"
 before:
   hooks:
-    - go generate ./...
+    - cd runtime && go generate ./...
     - cd runtime && go mod tidy
 builds:
   - main: .
